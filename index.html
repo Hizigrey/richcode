@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker (DEXScreener)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Crypto Tracker</h2>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#daily-trends">Daily Trends</a></li>
+                <li><a href="#top-tokens">Top Tokens</a></li>
+                <li><a href="#transactions">Transactions</a></li>
+                <li><a href="#dca-checker">DCA Checker</a></li>
+                <li><a href="#smart-money">Smart Money</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section id="overview"><h1>Overview</h1><div id="overview-data"></div></section>
+            <section id="daily-trends"><h1>Daily Trends</h1><div id="trends-data"></div></section>
+            <section id="top-tokens"><h1>Top Tokens</h1><div id="tokens-data"></div></section>
+            <section id="transactions"><h1>Transactions</h1><div id="tx-data"></div></section>
+            <section id="dca-checker">
+                <h1>DCA Token Checker</h1>
+                <input type="text" id="pair-input" placeholder="Enter pair address (e.g., Solana pair)">
+                <button onclick="checkDCA()">Check DCA</button>
+                <div id="dca-result"></div>
+            </section>
+            <section id="smart-money"><h1>Smart Money Tracker</h1><div id="smart-money-data"></div></section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
